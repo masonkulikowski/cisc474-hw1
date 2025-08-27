@@ -19,6 +19,21 @@
     </head>
     <body>
         <h1>John if you're reading this ggs</h1>
-        <button>Click Me!</button>
+        <button id="toggle">Click Me!</button>
+        <br />
+        <img id="image" src="images/photo.jpg">
+
+        <script>
+            const button = document.getElementById('toggle');
+            const img = document.getElementById('image');
+
+            button.addEventListener('click', () => {
+                if (img.style.display === 'none'|| img.style.display === '') {
+                    img.style.display = 'block';
+                } else {
+                    img.style.display = 'none';
+                }
+            });
+        </script>
     </body>
 </html>
